@@ -11,9 +11,9 @@ const homeData = [
 
 const Home = () => {
   return (
-    <div className="flex flex-col w-100 h-screen justify-between">
+    <div className=" flex flex-col w-100 min-h-screen justify-between">
       <Header title="Popular Titles" />
-      <Content data={homeData} placeholder = {true} />
+      <Content data={homeData} placeholder = {true} width = "w-36" height= "h-64"/>
       <Footer />
     </div>
   );
