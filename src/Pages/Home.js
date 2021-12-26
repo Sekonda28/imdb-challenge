@@ -4,16 +4,16 @@ import Footer from "../components/Footer";
 
 const homeData = [
   {
-    title: "Popular Series",
+    title: "series",
   },
-  { title: "Popular Movies" },
+  { title: "movies" },
 ];
 
 const Home = () => {
   return (
     <div className="flex flex-col w-100 h-screen justify-between">
       <Header title="Popular Titles" />
-      <Content data={homeData} />
+      <Content data={homeData} placeholder = {true} />
       <Footer />
     </div>
   );
