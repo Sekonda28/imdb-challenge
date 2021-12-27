@@ -13,7 +13,7 @@ const Content = ({ data, placeholder, width, height }) => {
             key={index}
             onClick={() => {
               navigate(`/${item.title}`);
-            } }
+            }}
           >
             {placeholder ? (
               <PlaceholderImage title={item.title} />
@@ -21,7 +21,8 @@ const Content = ({ data, placeholder, width, height }) => {
               <img
                 src={item.images["Poster Art"].url}
                 alt="poster"
-                className="h-5/6 w-full  object-center object-contain" />
+                className="h-5/6 w-full  object-center object-contain"
+              />
             )}
 
             <h3 className="h-1/6 w-full capitalize text-sm">{item.title}</h3>

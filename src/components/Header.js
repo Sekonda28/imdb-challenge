@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const Header = ({ title }) => {
-  const [showMenu, setShowMenu] = useState(false)
+  const [showMenu, setShowMenu] = useState(false);
   const navigate = useNavigate();
   return (
     <div className=" w-screen h-24 md:h-36 text-white relative">
@@ -26,17 +26,22 @@ const Header = ({ title }) => {
           </div>
           <div
             id="hamburger"
-            className="space-y-2 md:hidden cursor-pointer" onClick={()=>{setShowMenu(!showMenu)}}
+            className="space-y-2 md:hidden cursor-pointer"
+            onClick={() => {
+              setShowMenu(!showMenu);
+            }}
           >
             <div className="w-8 h-0.5 bg-white rounded-lg"></div>
             <div className="w-8 h-0.5 bg-white rounded-lg"></div>
             <div className="w-8 h-0.5 rounded-lg bg-white"></div>
-    
           </div>
         </nav>
-  
       </div>
-       <div className={`absolute ${!showMenu&&"hidden"} md:hidden top-12 right-0 px-6 w-fit h-fit bg-blue-500 text-right shadow-2xl rounded-bl-lg text-white z-50`}>
+      <div
+        className={`absolute ${
+          !showMenu && "hidden"
+        } md:hidden top-12 right-0 px-6 w-fit h-fit bg-blue-500 text-right shadow-2xl rounded-bl-lg text-white z-50`}
+      >
         <p className="cursor-pointer my-1">Log In</p>
         <p className="cursor-pointer my-1">Start your free trial</p>
       </div>

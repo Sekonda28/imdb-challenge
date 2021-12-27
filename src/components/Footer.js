@@ -27,7 +27,10 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row lg:justify-around h-1/2 mx-6 lg:mx-12">
-          <div id="social-buttons" className="flex h-1/2 items-center justify-center lg:justify-start w-full lg:h-full lg:w-1/2 space-x-6">
+          <div
+            id="social-buttons"
+            className="flex h-1/2 items-center justify-center lg:justify-start w-full lg:h-full lg:w-1/2 space-x-6"
+          >
             <img
               src={facebookWhite}
               alt="Facebook link"
@@ -44,7 +47,10 @@ const Footer = () => {
               className="h-3/5 lg:h-1/3 cursor-pointer"
             />
           </div>
-          <div id="app-buttons" className="flex flex-shrink-1 max-w-full h-1/2 lg:h-full lg:w-1/2 space-x-6 justify-center lg:justify-end items-center">
+          <div
+            id="app-buttons"
+            className="flex flex-shrink-1 max-w-full h-1/2 lg:h-full lg:w-1/2 space-x-6 justify-center lg:justify-end items-center"
+          >
             <img
               src={appStore}
               alt="App store"

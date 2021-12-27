@@ -1,6 +1,6 @@
 import placeholder from "../assets/placeholder.png";
 
-const PlaceholderImage = ({ title }) => {
+const PlaceholderImage = () => {
   return (
     <img
       src={placeholder}
