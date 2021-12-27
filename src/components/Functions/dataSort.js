@@ -1,7 +1,7 @@
 import data from "../../assets/data.json"
 
-
 export const dataSort =(type) =>{
+
 
     const sortedData = []
 for (let i= 0; i<data.entries.length; i++){
@@ -11,7 +11,7 @@ for (let i= 0; i<data.entries.length; i++){
     sortedData.sort((a,b)=>a.title.localeCompare(b.title))
 
 }
-console.log(sortedData);
+
     return sortedData
 
 
